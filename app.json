@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "TestAppSDK47",
+    "slug": "TestAppSDK47",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
