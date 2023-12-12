@@ -1,8 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 /* import React from "react"; */
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Logo from "./logo.svg";
 import { useFonts } from "expo-font";
+import { Circle, Path, Rect, Svg } from "react-native-svg";
+import SVG from "./logo2.svg";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -21,10 +23,10 @@ export default function App() {
   }
 
   return (
-    <View className="flex-1 items-center justify-center bg-[#1fff9a90]">
+    <View className="flex-1 items-center justify-center bg-[#751fff]">
       <TouchableOpacity className="">
         <View className="bg-[#000000e9] px-10 py-20 rounded-3xl items-center">
-          <Text style={styles.lexend_Bold} className="text-[#1fff9a]">
+          <Text style={styles.lexend_Bold} className="text-[#1ffff8e7]">
             SDK 47 Test App
           </Text>
           <Text
@@ -35,6 +37,12 @@ export default function App() {
           </Text>
           <TouchableOpacity className="pt-4 pb-2">
             {/* <Logo width={140} height={160} fill={"#ffffff"} /> */}
+            <Svg width={26} height={26} viewBox="0 0 20 20">
+              <Path
+                d="M16.993 6.667H3.227l6.883 6.883 6.883-6.883z"
+                fill="#fff"
+              />
+            </Svg>
           </TouchableOpacity>
           <Text
             style={styles.lexend_Thin}
@@ -44,7 +52,7 @@ export default function App() {
           </Text>
           <Text
             style={styles.lexend_Medium}
-            className="text-3xl pt-2 pb-0 text-[#1fff9a]"
+            className="text-3xl pt-2 pb-0 text-[#1fffcb]"
           >
             Jack Mullin
           </Text>
